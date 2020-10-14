@@ -1,0 +1,30 @@
+更换主题
+
+Hueman主题首页
+
+    进入hexo的根目录，打开git bash，克隆Hueman到themes文件夹
+
+$ git clone https://github.com/ppoffice/hexo-theme-hueman.git themes/hueman
+
+    修改hexo根目录下的_config.yml文件
+
+theme: hueman
+
+    重命名theme》hueman文件目录下的_config.yml.example为_config.yml
+    (可选项），安装此插件，这样博客可以支持搜索功能，在hexo的根目录下
+
+$ npm install -S hexo-generator-json-content
+
+    最后在hexo根目录执行以下命令就可以把更改部署上GitHub服务器了
+
+$ hexo clean
+$ hexo generate
+$ hexo deploy
+配置主题
+
+主要是修改头像，网站的favicon，添加评论系统，小姐姐的博客说的很清楚了，这里就不再介绍了，遇到问题也可以到主题的GitHub的issue上给作者留言，很快就可以得到回复的，或者在issue看大家的提问和作者的解答。
+
+作者：小雄子
+链接：https://www.jianshu.com/p/4ef8019b7e80
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
