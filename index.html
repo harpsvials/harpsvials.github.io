@@ -1,10 +1,16 @@
 <html>
 <head>
-<!-- 以下方式只是刷新不跳转到其他页面 -->
-<meta http-equiv="refresh" content="0"> 
-<!-- 以下方式定时转到其他页面 -->
-<meta http-equiv="refresh" content="0;url=http://zhuzhouchurch.com/">  
-</head>
+    <script language="javascript" type="text/javascript">
+    
+    var second = document.getElementById('totalSecond').textContent; 
+    setInterval("redirect()", 1000); 
+    function redirect() 
+    {
+    	document.getElementById('totalSecond').textContent = --second; 
+    	if (second < 0) location.href = 'hello.html';  
+    	} 
+    </script> 
+</head> 
 <body>
   正在进入芥菜种教会网站，请稍等。。。
 </body>
