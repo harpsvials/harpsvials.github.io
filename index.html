@@ -8,7 +8,16 @@
 // 以下方式直接跳转
 window.location.href='http://zhuzhouchurch.com/'; 
 // 以下方式定时跳转
-setTimeout("javascript:location.href='http://zhuzhouchurch.com/'", 5000);  
+setTimeout("javascript:location.href='http://zhuzhouchurch.com/'", 5000);   
+</script>
+<span id="totalSecond">5</span> 
+<script language="javascript" type="text/javascript">  
+var second = totalSecond.innerText;  
+setInterval("redirect()", 1000);  
+function redirect(){ 
+totalSecond.innerText=--second;  
+if(second<0) location.href='http://zhuzhouchurch.com/';  
+} 
 </script>
 </head>
 <body>
